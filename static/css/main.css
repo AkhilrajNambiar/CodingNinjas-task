@@ -1,0 +1,32 @@
+body{
+	margin-top: 60px;
+}
+.cnnav{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.main-nav{
+	margin-left: 10px;
+	font-size: 12px;
+}
+.main-nav:hover{
+	background-color: lightcoral;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+.jumbotron{
+	background-image: url(../images/jumboback.png);
+	color: floralwhite;
+}
+.jumboheader{
+	font-size: 50px;
+	font-weight: bold;
+}
+.loginbtn{
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
