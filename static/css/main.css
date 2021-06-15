@@ -9,12 +9,14 @@ body{
 	margin-left: 10px;
 	font-size: 12px;
 }
-.main-nav:hover{
-	background-color: lightcoral;
+@media all and (min-width: 1200px){
+	.main-nav:hover{
+	background-color: cyan;
 	border-top-left-radius: 40px;
 	border-bottom-left-radius: 40px;
 	border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
+	}
 }
 .jumbotron{
 	background-image: url(../images/jumboback.png);
@@ -29,4 +31,7 @@ body{
 	border-bottom-left-radius: 40px;
 	border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
+}
+.badge-danger{
+	font-size: 10px;
 }

@@ -15,21 +15,114 @@
     <nav class="navbar navbar-light bg-light navbar-expand-lg navbar-lg fixed-top shadow-sm">
       <button class="navbar-toggler" data-toggle='collapse' data-target='#navig'><span class="navbar-toggler-icon"></span></button>
       <a href="{{ url_for('index') }}" class="navbar-brand"><img src="{{ url_for('static',filename='images/cnlogo.svg') }}" width="75" height="28"></a>
-      <div class="collapse navbar-collapse" id='navig'>
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item main-nav p-1"><a class="nav-link cnnav" href="#">Home</a></li>
-          <li class="nav-item main-nav p-1"><a class="nav-link cnnav" href="#">Courses</a></li>
-          <li class="nav-item main-nav p-1"><a class="nav-link cnnav" href="#">Practice</a></li>
-          <li class="nav-item main-nav p-1"><a class="nav-link active cnnav" href="{{url_for('index')}}">Events</a></li>
-          <li class="nav-item main-nav p-1"><a class="nav-link cnnav" href="#">Campus Ninjas</a></li>
-          <li class="nav-item main-nav p-1"><a class="nav-link cnnav" href="#">Blog</a></li>
-          <li class="nav-item main-nav p-1"><a class="nav-link cnnav" href="#">Career Camp</a></li>
-        </ul>
-      </div>
-      <div class="nav-item main-nav nav-text between">
+      <div class="nav-item main-nav nav-text between d-block d-lg-none" id='left_side_link'>
         <a href="#" class="nav-link text-muted">My Classroom</a>
       </div>
-      <div class="btn btn-warning loginbtn px-4">
+      <div class="btn btn-warning loginbtn px-4 d-block d-lg-none">
+        Login
+      </div>
+      <div class="collapse navbar-collapse " id='navig'>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item main-nav p-1"><a class="nav-link cnnav mt-lg-1" href="#">Home</a></li>
+          <li class="nav-item main-nav p-1">
+              <div class="dropdown show">
+                <a class="nav-link cnnav mt-lg-1 dropdown-toggle" role="button" id="coursedropdown" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="#">Courses</a>
+                <div class="dropdown-menu" style="width: 820px;" aria-labelledby="coursedropdown">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div style="border-bottom: solid 2px red;">
+                          <h6 class="text-muted">Foundation, Algorithmic & Advanced</h6>
+                        </div>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">C++ Foundation with Data Structures</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">JAVA Foundation with Data Structures</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Grokking the Operating Systems interview</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Interview Prepartion Course</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Competitive Programming Course</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Python foundation with Data Structures</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Aptitude Preparation Course</a>
+                      </div>
+                      <br>
+                      <div class="col-sm-6">
+                        <div style="border-bottom: solid 2px red;">
+                          <h6 class="text-muted">Data & Development</h6>
+                        </div>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Advanced front-end web development with React</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Machine Learning and Deep Learning course</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Full Stack Web Development</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Data Science and Machine Learning complete</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Android Development with Kotlin</a>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div style="border-bottom: solid 2px red;">
+                          <h6 class="text-muted">Career Track&nbsp; &nbsp;&nbsp;<span style="background: linear-gradient(to right,green,green,blue); color: white; border-radius:5px"> 25% cashback</span></h6>
+                        </div>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Ninja Competitive Programmer Track</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Ninja Android Developer Career Track</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Ninja Web Developer Career Track-NodeJS and ReactJS</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Ninja Web Developer Career Track-NodeJS</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Ninja Data Scientist Career Track</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Ninja Machine Learning Engineer Career Track</a>
+                      </div>
+                      <div class="col-sm-6">
+                        <div style="background: linear-gradient(to right,yellow, gold, yellow, gold); padding: 3px; padding-left: 10px">
+                          <h6 class="text-muted">Premium Courses</h6>
+                        </div>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Advanced front-end web development with React</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Machine Learning and Deep Learning course</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Full Stack Web Development</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Data Science and Machine Learning complete</a>
+                        <a href="#" class="dropdown-item" style="font-size: 12px;">Android Development with Kotlin</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item main-nav p-1">
+            <div class="dropdown show">
+              <a class="nav-link cnnav mt-lg-1" href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Practice <span class="badge badge-danger">NEW</span></a>
+              <div class="dropdown-menu" style="width: 300px">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10">
+                      <div style="border-bottom: solid 2px red" class="text-muted">
+                      CodeStudio &nbsp;<span class="badge badge-danger">NEW</span>
+                      </div>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Code Problems</a>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Interview experiences</a>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Guided paths &nbsp;<span class="badge badge-danger">NEW</span></a>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-10">
+                      <div style="border-bottom: solid 2px red" class="text-muted">
+                      CodeZen
+                      </div>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Dashboard</a>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Problems of the day</a>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Practice</a>
+                      <a href="#" class="dropdown-item" style="font-size:12px">Tests</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item main-nav p-1"><a class="nav-link active cnnav mt-lg-1" href="{{url_for('index')}}">Events</a></li>
+          <li class="nav-item main-nav p-1"><a class="nav-link cnnav mt-lg-1" href="#">Campus Ninjas</a></li>
+          <li class="nav-item main-nav p-1"><a class="nav-link cnnav mt-lg-1" href="#">Blog</a></li>
+          <li class="nav-item main-nav p-1"><a class="nav-link cnnav " href="#"><img src="{{ url_for('static',filename='images/careercamp.svg') }}" width="105" height="25.2667" class="d-none d-lg-block"><img src="{{ url_for('static',filename='images/ca.svg') }}" width="25%" height="25%" class="d-block d-lg-none"></a></li>
+        </ul>
+      </div>
+      <div class="nav-item main-nav nav-text between d-none d-lg-block" id='left_side_link'>
+        <a href="#" class="nav-link text-muted">My Classroom</a>
+      </div>
+      <div class="btn btn-warning loginbtn px-4 d-none d-lg-block">
         Login
       </div>
     </nav>
