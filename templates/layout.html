@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
 
     <title>Coding Ninjas|Events</title>
@@ -132,10 +133,81 @@
         <h4>Learn, compete and grows</h4>
       </div>
     </div>
+
+    <div class="container" id="events_box">
+      <nav class="navbar navbar-light navbar-expand navbar-lg">
+        <ul class="list-unstyled navbar-nav justify-content-between w-100">
+          <li class="nav-item event_type"><a class="nav-link active eventtablelink" id="alleventslink"><span class="far fa-calendar-alt"></span> All Events</a></li>
+          <li class="nav-item event_type"><a class="nav-link" id="webinarslink"><span class="fa fa-tv"></span> Webinars</a></li>
+          <li class="nav-item event_type"><a class="nav-link" id="codingeventslink"><span class="fa fa-code"></span> Coding Events</a></li>
+          <li class="nav-item event_type"><a class="nav-link" id="bootcamplink"><span class="fa fa-users"></span> Bootcamp Events</a></li>
+          <li class="nav-item event_type"><a class="nav-link" id="workshoplink"><span class="fa fa-video"></span> Workshop</a></li>
+        </ul>
+      </nav>
+      <div id="allevents" class="subtables mb-3">
+        <nav class="navbar navbar-light navbar-expand navbar-lg">
+          <ul class="list-unstyled navbar-nav justify-content-between w-sm-50">
+            <li class="nav-item"><a href="" class="nav-link active eventtablelink all1" id="allupcoming">Upcoming</a></li>
+            <li class="nav-item"><a href="" class="nav-link all2" id="allarchive">Archived</a></li>
+            <li class="nav-item"><a href="" class="nav-link all3" id="allatf">All Time Favourites</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="webinars" class="subtables mb-3">
+        <nav class="navbar navbar-light navbar-expand navbar-lg">
+          <ul class="list-unstyled navbar-nav justify-content-between w-sm-50">
+            <li class="nav-item"><a href="" class="nav-link active eventtablelink webinar1">Upcoming</a></li>
+            <li class="nav-item"><a href="" class="nav-link webinar2">Archived</a></li>
+            <li class="nav-item"><a href="" class="nav-link webinar3">All Time Favourites</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="codingevents" class="subtables mb-3">
+        <nav class="navbar navbar-light navbar-expand navbar-lg">
+          <ul class="list-unstyled navbar-nav justify-content-between w-sm-50">
+            <li class="nav-item"><a href="" class="nav-link active eventtablelink ce1">Upcoming</a></li>
+            <li class="nav-item"><a href="" class="nav-link ce2">Archived</a></li>
+            <li class="nav-item"><a href="" class="nav-link ce3">All Time Favourites</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="bootcamp" class="subtables mb-3">
+        <nav class="navbar navbar-light navbar-expand navbar-lg">
+          <ul class="list-unstyled navbar-nav justify-content-between w-sm-50">
+            <li class="nav-item"><a href="" class="nav-link active eventtablelink bc1">Upcoming</a></li>
+            <li class="nav-item"><a href="" class="nav-link bc2">Archived</a></li>
+            <li class="nav-item"><a href="" class="nav-link bc3">All Time Favourites</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="workshop" class="subtables mb-3">
+        <nav class="navbar navbar-light navbar-expand navbar-lg">
+          <ul class="list-unstyled navbar-nav justify-content-between w-sm-50">
+            <li class="nav-item"><a href="" class="nav-link active eventtablelink work1">Upcoming</a></li>
+            <li class="nav-item"><a href="" class="nav-link work2">Archived</a></li>
+            <li class="nav-item"><a href="" class="nav-link work3">All Time Favourites</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row" id="content-row">
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          Kingkong vs Godzilla is a great movie. Avengers Endgame is the highest grossing hollywood movie. And Bill gates published his summer list of books on gates notes.
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/events.js') }}">
+    </script>
   </body>
 </html>

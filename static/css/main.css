@@ -22,9 +22,17 @@ body{
 	background-image: url(../images/jumboback.png);
 	color: floralwhite;
 }
-.jumboheader{
+@media all and (min-width: 900px){
+	.jumboheader{
+	font-size: 65px;
+	font-weight: bold;
+	}
+}
+@media all and (max-width: 900px){
+	.jumboheader{
 	font-size: 50px;
 	font-weight: bold;
+	}
 }
 .loginbtn{
 	border-top-left-radius: 40px;
@@ -34,4 +42,89 @@ body{
 }
 .badge-danger{
 	font-size: 10px;
+}
+#events_box{
+	border: solid 1px lightgrey;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	margin-top: 70px;
+}
+.event_type{
+	font-size: 20px;
+}
+#alleventslink:hover{
+	cursor: pointer;
+}
+#webinarslink:hover{
+	cursor: pointer;
+}
+#codingeventslink:hover{
+	cursor: pointer;
+}
+#bootcamplink:hover{
+	cursor: pointer;
+}
+#workshoplink:hover{
+	cursor: pointer;
+}	
+#webinars{
+	display: none;
+}
+#codingevents{
+	display: none;
+}
+#bootcamp{
+	display: none;
+}
+#workshop{
+	display: none;
+}
+.eventtablelink{
+	color: #fa7328 !important;
+}
+.subtables{
+	border-top: solid 1px lightgrey;
+	border-bottom: solid 1px lightgrey;
+}
+.event_description{
+	line-height: 1.2em;
+	height: 3.6em;
+	overflow: hidden;
+}
+.def_size{
+	font-size: 13px;
+}
+.val_size{
+	font-size: 14px;
+}
+@media all and (min-width:1200px){
+	#register_box{
+		/* margin-left: 18px; */
+		position: relative;
+		left: 60px;
+	}
+}
+@media all and (min-width:990px) and (max-width:1200px){
+	#register_box{
+		/* margin-left: 18px; */
+		position: relative;
+		left: 30px;
+	}
+}
+@media all and (min-width:576px) and (max-width:768px){
+	#register_box{
+		/* margin-left: 18px; */
+		position: relative;
+		left: 85px;
+	}
+}
+@media all and (max-width:576px){
+	#register_box{
+		/* margin-left: 18px; */
+		position: relative;
+		left: 55px;
+	}
+}
+.card_link{
+	cursor: pointer;
 }
