@@ -128,3 +128,13 @@ body{
 .card_link{
 	cursor: pointer;
 }
+#allTagExpander{
+	color:#fa7328;
+	cursor: pointer;
+}
+#next_tagged{
+	display: none;
+}
+#prev_tagged{
+	display: none;
+}
